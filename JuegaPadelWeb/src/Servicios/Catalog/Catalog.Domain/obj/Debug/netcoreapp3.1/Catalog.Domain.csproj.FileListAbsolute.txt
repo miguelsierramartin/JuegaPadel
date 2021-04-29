@@ -1,0 +1,9 @@
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Domain\bin\Debug\netcoreapp3.1\Catalog.Domain.deps.json
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Domain\bin\Debug\netcoreapp3.1\Catalog.Domain.dll
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Domain\bin\Debug\netcoreapp3.1\Catalog.Domain.pdb
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Domain\obj\Debug\netcoreapp3.1\Catalog.Domain.csprojAssemblyReference.cache
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Domain\obj\Debug\netcoreapp3.1\Catalog.Domain.AssemblyInfoInputs.cache
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Domain\obj\Debug\netcoreapp3.1\Catalog.Domain.AssemblyInfo.cs
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Domain\obj\Debug\netcoreapp3.1\Catalog.Domain.csproj.CoreCompileInputs.cache
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Domain\obj\Debug\netcoreapp3.1\Catalog.Domain.dll
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Domain\obj\Debug\netcoreapp3.1\Catalog.Domain.pdb
