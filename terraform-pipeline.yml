@@ -17,8 +17,9 @@ steps:
     Contents: '**.tf'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
+steps:
 - task: PublishBuildArtifacts@1
-inputs:
- PathtoPublish: '$(Build.ArtifactStagingDirectory)'
- ArtifactName: 'drop'
- publishLocation: 'Container'
+  displayName: 'Publish Artifact: drop'
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
