@@ -26,7 +26,7 @@ namespace Catalog.Api.Controllers
         [HttpGet]
         public string Get()
         {
-            return "Running...";
+            return "Estas en el entorno de stage in";
         }
     }
 }
