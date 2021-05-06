@@ -13,7 +13,6 @@ steps:
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
   inputs:
-    SourceFolder: JuegaPadelWeb
     Contents: '**.tf'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
