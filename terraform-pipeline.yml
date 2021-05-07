@@ -7,17 +7,15 @@ trigger:
 - main
 
 pool:
- vmImage: 'windows-latest'
-
+  name: Azure Pipelines
 steps:
 - task: CopyFiles@2
   displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
   inputs:
+    SourceFolder: JuegaPadelWeb/Terraform
     Contents: '**.tf'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
 - task: PublishBuildArtifacts@1
   displayName: 'Publish Artifact: drop'
-  inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'drop'
+
