@@ -1,0 +1,4 @@
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Service.Queries\obj\Debug\netcoreapp3.1\Catalog.Service.Queries.csprojAssemblyReference.cache
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Service.Queries\obj\Debug\netcoreapp3.1\Catalog.Service.Queries.AssemblyInfoInputs.cache
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Service.Queries\obj\Debug\netcoreapp3.1\Catalog.Service.Queries.AssemblyInfo.cs
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Service.Queries\obj\Debug\netcoreapp3.1\Catalog.Service.Queries.csproj.CoreCompileInputs.cache

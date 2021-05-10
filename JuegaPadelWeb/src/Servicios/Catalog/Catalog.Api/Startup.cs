@@ -1,16 +1,18 @@
 using Catalog.Persistence.Database;
+using Catalog.Service.Queries;
+using MediatR;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+using Microsoft.IdentityModel.Tokens;
+using System.Reflection;
+using System.Text;
 
 namespace Catalog.Api
 {
@@ -33,6 +35,11 @@ namespace Catalog.Api
                     x => x.MigrationsHistoryTable("__EFMigrationsHistory", "Catalog")
                 )
             );
+
+            services.AddMediatR(Assembly.Load("Catalog.Service.EventHandlers"));
+            
+            services.AddTransient<IProductQueryService, ProductQueryService>();
+            
             services.AddControllers();
         }
 

@@ -1,0 +1,3 @@
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Common\Service.Common.Paging\bin\Debug\netcoreapp3.1\Service.Common.Collection.dll
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Common\Service.Common.Paging\obj\Debug\netcoreapp3.1\Service.Common.Paging.AssemblyInfoInputs.cache
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Common\Service.Common.Paging\obj\Debug\netcoreapp3.1\Service.Common.Paging.AssemblyInfo.cs

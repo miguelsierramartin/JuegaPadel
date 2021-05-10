@@ -65,3 +65,10 @@ C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bi
 C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Catalog.Persistence.Database.pdb
 C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Catalog.Domain.pdb
 C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\obj\Debug\netcoreapp3.1\Catalog.Api.csproj.CopyComplete
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Catalog.Service.Queries.dll
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Service.Common.Collection.dll
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Service.Common.Mapping.dll
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Service.Common.Collection.pdb
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\MediatR.dll
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Catalog.Service.EventHandlers.dll
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Service.Common.Mapping.pdb
