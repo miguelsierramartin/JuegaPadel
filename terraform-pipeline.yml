@@ -4,12 +4,14 @@
 # https://aka.ms/yaml
 
 trigger:
-- main
-paths:
-include:
-- terraform
-exclude:
--src
+  branches:
+    include:
+    - master
+  paths:
+    include:
+    - terraform
+    exclude:
+    - src
 
 pool:
  vmImage: 'windows-latest'
