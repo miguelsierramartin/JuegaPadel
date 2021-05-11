@@ -40,7 +40,7 @@ resource "azurerm_app_service_plan" "JuegaPadelASP-Prod" {
 #Definimos el app service Desarrollo
 
 resource "azurerm_app_service" "app_service_terraform" {
-  name                = "jp-catalogSTA"
+  name                = "jp-catalogSta"
   location            = azurerm_resource_group.JuegaPadel-Sta.location
   resource_group_name = azurerm_resource_group.JuegaPadel-Sta.name
   app_service_plan_id = azurerm_app_service_plan.JuegaPadelASP-Sta.id
