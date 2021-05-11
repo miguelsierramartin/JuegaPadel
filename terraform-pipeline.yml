@@ -5,6 +5,11 @@
 
 trigger:
 - main
+path:
+include:
+- terraform
+exclude:
+-src
 
 pool:
  vmImage: 'windows-latest'
