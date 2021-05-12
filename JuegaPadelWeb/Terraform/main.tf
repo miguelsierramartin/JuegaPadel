@@ -39,7 +39,7 @@ resource "azurerm_app_service_plan" "JuegaPadelASP-Prod" {
 
 #Definimos el app service Desarrollo
 
-resource "azurerm_app_service" "app_service_terraform" {
+resource "azurerm_app_service" "app_service_stagein" {
   name                = "jp-catalogSta"
   location            = azurerm_resource_group.JuegaPadel-Sta.location
   resource_group_name = azurerm_resource_group.JuegaPadel-Sta.name
@@ -57,7 +57,7 @@ resource "azurerm_app_service" "app_service_terraform" {
 
 }
 
-resource "azurerm_app_service" "app_service_terraform" {
+resource "azurerm_app_service" "app_service_production" {
   name                = "jp-catalogProd"
   location            = azurerm_resource_group.JuegaPadel-Prod.location
   resource_group_name = azurerm_resource_group.JuegaPadel-Prod.name

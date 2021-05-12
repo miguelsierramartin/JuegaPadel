@@ -9,5 +9,7 @@ namespace Catalog.Domain
         public int ProductoEnStockId { get; set; }
         public int ProductoId { get; set; }
         public int Stock { get; set; }
+        public object ProductInStockId { get; set; }
+        public int ProductId { get; set; }
     }
 }
