@@ -1526,6 +1526,20 @@
         "runtime": {
           "bin/placeholder/Service.Common.Mapping.dll": {}
         }
+      },
+      "Service.Common.Paging/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.5",
+          "Service.Common.Collection": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Service.Common.Paging.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Service.Common.Paging.dll": {}
+        }
       }
     }
   },
@@ -5758,13 +5772,19 @@
       "type": "project",
       "path": "../../Common/Service.Common.Mapping/Service.Common.Mapping.csproj",
       "msbuildProject": "../../Common/Service.Common.Mapping/Service.Common.Mapping.csproj"
+    },
+    "Service.Common.Paging/1.0.0": {
+      "type": "project",
+      "path": "../../Common/Service.Common.Paging/Service.Common.Paging.csproj",
+      "msbuildProject": "../../Common/Service.Common.Paging/Service.Common.Paging.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "Catalog.Persistence.Database >= 1.0.0",
       "Service.Common.Collection >= 1.0.0",
-      "Service.Common.Mapping >= 1.0.0"
+      "Service.Common.Mapping >= 1.0.0",
+      "Service.Common.Paging >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5802,6 +5822,9 @@
             },
             "C:\\Users\\migue\\git\\JuegaPadel\\JuegaPadelWeb\\src\\Servicios\\Common\\Service.Common.Mapping\\Service.Common.Mapping.csproj": {
               "projectPath": "C:\\Users\\migue\\git\\JuegaPadel\\JuegaPadelWeb\\src\\Servicios\\Common\\Service.Common.Mapping\\Service.Common.Mapping.csproj"
+            },
+            "C:\\Users\\migue\\git\\JuegaPadel\\JuegaPadelWeb\\src\\Servicios\\Common\\Service.Common.Paging\\Service.Common.Paging.csproj": {
+              "projectPath": "C:\\Users\\migue\\git\\JuegaPadel\\JuegaPadelWeb\\src\\Servicios\\Common\\Service.Common.Paging\\Service.Common.Paging.csproj"
             }
           }
         }
