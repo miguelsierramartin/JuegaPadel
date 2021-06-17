@@ -1,15 +1,21 @@
 using Catalog.Persistence.Database;
 using Catalog.Service.Queries;
 using Common.Logging;
+using HealthChecks.UI.Client;
 using MediatR;
+//using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.IdentityModel.Tokens;
 using System.Reflection;
+using System.Text;
 
 namespace Catalog.Api
 {
@@ -32,6 +38,13 @@ namespace Catalog.Api
                     x => x.MigrationsHistoryTable("__EFMigrationsHistory", "Catalog")
                 )
             );
+
+            services.AddHealthChecks()
+                        .AddCheck("self", () => HealthCheckResult.Healthy())
+                        .AddDbContextCheck<ApplicationDbContext>();
+
+            services.AddHealthChecksUI()
+                .AddInMemoryStorage(); //nuget: AspNetCore.HealthChecks.UI.InMemory.Storage
 
             services.AddMediatR(Assembly.Load("Catalog.Service.EventHandlers"));
             
@@ -60,6 +73,20 @@ namespace Catalog.Api
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapHealthChecks("/hc", new HealthCheckOptions()
+                {
+                    Predicate = _ => true,
+                    ResponseWriter = UIResponseWriter.WriteHealthCheckUIResponse
+                });
+
+                //nuget: AspNetCore.HealthChecks.UI
+                app.UseHealthChecksUI(options =>
+                {
+                    options.UIPath = "/healthchecks-ui";
+                    options.ApiPath = "/health-ui-api";
+                });
+
+                endpoints.MapHealthChecksUI();
                 endpoints.MapControllers();
             });
         }
