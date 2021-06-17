@@ -32,7 +32,13 @@
       "Catalog.Api/1.0.0": {
         "dependencies": {
           "Catalog.Persistence.Database": "1.0.0",
+          "Catalog.Service.EventHandlers": "1.0.0",
+          "Catalog.Service.Queries": "1.0.0",
+          "Common.Logging": "1.0.0",
+          "MediatR": "9.0.0",
+          "MediatR.Extensions.Microsoft.DependencyInjection": "9.0.0",
           "Microsoft.EntityFrameworkCore.Tools": "5.0.5",
+          "Microsoft.Extensions.Logging": "5.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -317,6 +323,32 @@
             "assemblyVersion": "2.8.0.0",
             "fileVersion": "2.8.26.1919"
           }
+        }
+      },
+      "MediatR/9.0.0": {
+        "runtime": {
+          "lib/netstandard2.1/MediatR.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.1/MediatR.dll": {}
+        }
+      },
+      "MediatR.Extensions.Microsoft.DependencyInjection/9.0.0": {
+        "dependencies": {
+          "MediatR": "9.0.0",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "5.0.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {
+            "assemblyVersion": "9.0.0.0",
+            "fileVersion": "9.0.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/MediatR.Extensions.Microsoft.DependencyInjection.dll": {}
         }
       },
       "Microsoft.CSharp/4.7.0": {},
@@ -1395,6 +1427,14 @@
           "System.Xml.XmlDocument": "4.3.0"
         }
       },
+      "Catalog.Common/1.0.0": {
+        "runtime": {
+          "Catalog.Common.dll": {}
+        },
+        "compile": {
+          "Catalog.Common.dll": {}
+        }
+      },
       "Catalog.Domain/1.0.0": {
         "runtime": {
           "Catalog.Domain.dll": {}
@@ -1413,6 +1453,72 @@
         },
         "compile": {
           "Catalog.Persistence.Database.dll": {}
+        }
+      },
+      "Catalog.Service.EventHandlers/1.0.0": {
+        "dependencies": {
+          "Catalog.Common": "1.0.0",
+          "Catalog.Persistence.Database": "1.0.0",
+          "MediatR": "9.0.0"
+        },
+        "runtime": {
+          "Catalog.Service.EventHandlers.dll": {}
+        },
+        "compile": {
+          "Catalog.Service.EventHandlers.dll": {}
+        }
+      },
+      "Catalog.Service.Queries/1.0.0": {
+        "dependencies": {
+          "Catalog.Persistence.Database": "1.0.0",
+          "Service.Common.Collection": "1.0.0",
+          "Service.Common.Mapping": "1.0.0",
+          "Service.Common.Paging": "1.0.0"
+        },
+        "runtime": {
+          "Catalog.Service.Queries.dll": {}
+        },
+        "compile": {
+          "Catalog.Service.Queries.dll": {}
+        }
+      },
+      "Common.Logging/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "runtime": {
+          "Common.Logging.dll": {}
+        },
+        "compile": {
+          "Common.Logging.dll": {}
+        }
+      },
+      "Service.Common.Collection/1.0.0": {
+        "runtime": {
+          "Service.Common.Collection.dll": {}
+        },
+        "compile": {
+          "Service.Common.Collection.dll": {}
+        }
+      },
+      "Service.Common.Mapping/1.0.0": {
+        "runtime": {
+          "Service.Common.Mapping.dll": {}
+        },
+        "compile": {
+          "Service.Common.Mapping.dll": {}
+        }
+      },
+      "Service.Common.Paging/1.0.0": {
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "5.0.5",
+          "Service.Common.Collection": "1.0.0"
+        },
+        "runtime": {
+          "Service.Common.Paging.dll": {}
+        },
+        "compile": {
+          "Service.Common.Paging.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/3.1.0.0": {
@@ -3050,6 +3156,20 @@
       "path": "humanizer.core/2.8.26",
       "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
     },
+    "MediatR/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-8b3UYNxegHVYcJMG2zH8wn+YqxLvXG+eMfj0cMCq/jTW72p6O3PCKMkrIv0mqyxdW7bA4gblsocw7n+/9Akg5g==",
+      "path": "mediatr/9.0.0",
+      "hashPath": "mediatr.9.0.0.nupkg.sha512"
+    },
+    "MediatR.Extensions.Microsoft.DependencyInjection/9.0.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-msreY4ogiPdIRWiCQVHQDytIQpsZCLWsixWPZ+Xs86KZrvtuiV8BDHbIT0kBmogynVYWNpspb3caw+86YU8L6w==",
+      "path": "mediatr.extensions.microsoft.dependencyinjection/9.0.0",
+      "hashPath": "mediatr.extensions.microsoft.dependencyinjection.9.0.0.nupkg.sha512"
+    },
     "Microsoft.CSharp/4.7.0": {
       "type": "package",
       "serviceable": true,
@@ -3722,12 +3842,47 @@
       "path": "system.xml.xmlserializer/4.3.0",
       "hashPath": "system.xml.xmlserializer.4.3.0.nupkg.sha512"
     },
+    "Catalog.Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "Catalog.Domain/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "Catalog.Persistence.Database/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Catalog.Service.EventHandlers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Catalog.Service.Queries/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Common.Logging/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Service.Common.Collection/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Service.Common.Mapping/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Service.Common.Paging/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

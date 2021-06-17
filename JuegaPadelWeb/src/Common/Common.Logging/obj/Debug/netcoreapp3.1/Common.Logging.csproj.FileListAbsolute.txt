@@ -1,0 +1,9 @@
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Common\Common.Logging\bin\Debug\netcoreapp3.1\Common.Logging.deps.json
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Common\Common.Logging\bin\Debug\netcoreapp3.1\Common.Logging.dll
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Common\Common.Logging\bin\Debug\netcoreapp3.1\Common.Logging.pdb
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Common\Common.Logging\obj\Debug\netcoreapp3.1\Common.Logging.csprojAssemblyReference.cache
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Common\Common.Logging\obj\Debug\netcoreapp3.1\Common.Logging.AssemblyInfoInputs.cache
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Common\Common.Logging\obj\Debug\netcoreapp3.1\Common.Logging.AssemblyInfo.cs
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Common\Common.Logging\obj\Debug\netcoreapp3.1\Common.Logging.csproj.CoreCompileInputs.cache
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Common\Common.Logging\obj\Debug\netcoreapp3.1\Common.Logging.dll
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Common\Common.Logging\obj\Debug\netcoreapp3.1\Common.Logging.pdb

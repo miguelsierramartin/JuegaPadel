@@ -72,3 +72,12 @@ C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bi
 C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\MediatR.dll
 C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Catalog.Service.EventHandlers.dll
 C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Service.Common.Mapping.pdb
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\MediatR.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Catalog.Common.dll
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Common.Logging.dll
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Service.Common.Paging.dll
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Catalog.Service.EventHandlers.pdb
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Service.Common.Paging.pdb
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Common.Logging.pdb
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Catalog.Service.Queries.pdb
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Api\bin\Debug\netcoreapp3.1\Catalog.Common.pdb

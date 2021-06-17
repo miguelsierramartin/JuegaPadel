@@ -12,3 +12,5 @@ C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Servic
 C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Service.EventHandlers\obj\Debug\netcoreapp3.1\Catalog.Service.EventHandlers.csproj.CopyComplete
 C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Service.EventHandlers\obj\Debug\netcoreapp3.1\Catalog.Service.EventHandlers.dll
 C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Service.EventHandlers\obj\Debug\netcoreapp3.1\Catalog.Service.EventHandlers.pdb
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Service.EventHandlers\bin\Debug\netcoreapp3.1\Catalog.Common.dll
+C:\Users\migue\git\JuegaPadel\JuegaPadelWeb\src\Servicios\Catalog\Catalog.Service.EventHandlers\bin\Debug\netcoreapp3.1\Catalog.Common.pdb

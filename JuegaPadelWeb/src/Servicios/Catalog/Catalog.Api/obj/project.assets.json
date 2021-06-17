@@ -1543,6 +1543,16 @@
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
       },
+      "Catalog.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Catalog.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Catalog.Common.dll": {}
+        }
+      },
       "Catalog.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
@@ -1571,6 +1581,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
         "dependencies": {
+          "Catalog.Common": "1.0.0",
           "Catalog.Persistence.Database": "1.0.0",
           "MediatR": "9.0.0"
         },
@@ -1595,6 +1606,19 @@
         },
         "runtime": {
           "bin/placeholder/Catalog.Service.Queries.dll": {}
+        }
+      },
+      "Common.Logging/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "Microsoft.Extensions.Logging": "5.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Common.Logging.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Common.Logging.dll": {}
         }
       },
       "Service.Common.Collection/1.0.0": {
@@ -5930,6 +5954,11 @@
         "system.xml.xmlserializer.nuspec"
       ]
     },
+    "Catalog.Common/1.0.0": {
+      "type": "project",
+      "path": "../Catalog.Common/Catalog.Common.csproj",
+      "msbuildProject": "../Catalog.Common/Catalog.Common.csproj"
+    },
     "Catalog.Domain/1.0.0": {
       "type": "project",
       "path": "../Catalog.Domain/Catalog.Domain.csproj",
@@ -5949,6 +5978,11 @@
       "type": "project",
       "path": "../Catalog.Service.Queries/Catalog.Service.Queries.csproj",
       "msbuildProject": "../Catalog.Service.Queries/Catalog.Service.Queries.csproj"
+    },
+    "Common.Logging/1.0.0": {
+      "type": "project",
+      "path": "../../../Common/Common.Logging/Common.Logging.csproj",
+      "msbuildProject": "../../../Common/Common.Logging/Common.Logging.csproj"
     },
     "Service.Common.Collection/1.0.0": {
       "type": "project",
@@ -5971,9 +6005,11 @@
       "Catalog.Persistence.Database >= 1.0.0",
       "Catalog.Service.EventHandlers >= 1.0.0",
       "Catalog.Service.Queries >= 1.0.0",
+      "Common.Logging >= 1.0.0",
       "MediatR >= 9.0.0",
       "MediatR.Extensions.Microsoft.DependencyInjection >= 9.0.0",
-      "Microsoft.EntityFrameworkCore.Tools >= 5.0.5"
+      "Microsoft.EntityFrameworkCore.Tools >= 5.0.5",
+      "Microsoft.Extensions.Logging >= 5.0.0"
     ]
   },
   "packageFolders": {
@@ -6003,6 +6039,9 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "C:\\Users\\migue\\git\\JuegaPadel\\JuegaPadelWeb\\src\\Common\\Common.Logging\\Common.Logging.csproj": {
+              "projectPath": "C:\\Users\\migue\\git\\JuegaPadel\\JuegaPadelWeb\\src\\Common\\Common.Logging\\Common.Logging.csproj"
+            },
             "C:\\Users\\migue\\git\\JuegaPadel\\JuegaPadelWeb\\src\\Servicios\\Catalog\\Catalog.Persistence.Database\\Catalog.Persistence.Database.csproj": {
               "projectPath": "C:\\Users\\migue\\git\\JuegaPadel\\JuegaPadelWeb\\src\\Servicios\\Catalog\\Catalog.Persistence.Database\\Catalog.Persistence.Database.csproj"
             },
@@ -6038,6 +6077,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[5.0.5, )"
+          },
+          "Microsoft.Extensions.Logging": {
+            "target": "Package",
+            "version": "[5.0.0, )"
           }
         },
         "imports": [
